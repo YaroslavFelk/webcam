@@ -1,0 +1,8 @@
+.popup-gallery_container {margin: 100px 0;}
+.popup-gallery {flex-wrap: wrap; padding: 0 50px; }
+.popup-gallery_container .h2 {text-align: center;     margin-bottom: 30px;}
+.popup-gallery img {width: 100%;}
+
+.popup-gallery .slick-prev {left: 0px;}
+.popup-gallery .slick-next {right: 0px;}
+.popup-gallery .slick-arrow {display: block !important;}

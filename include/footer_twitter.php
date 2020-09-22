@@ -1,0 +1,1 @@
+<a class="footer__social-link" href="https://twitter.com/" aria-label="Мы в Twitter" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/img/icon-footer-twitter.svg')"></a>

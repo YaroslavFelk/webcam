@@ -1,0 +1,4 @@
+.catalog_tags {display: flex; flex-wrap: wrap;}
+.catalog_tags a { padding: 0 15px; height: 33px; line-height: 31px; border: 1px solid #DADADA; display: inline-block;
+    border-radius: 3px; font-size: 13px; color: var(--font_color); text-align: center; margin-right: 10px; text-decoration: none;  margin-bottom: 15px;}
+.catalog_tags a:hover {border-color: var(--main_color); color: var(--main_color);}

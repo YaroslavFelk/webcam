@@ -1,0 +1,61 @@
+.main_slider {height: 396px;}
+.menu_slider .main_slider {height: 406px;}
+.slider_item {width: 100%; text-align: center; background-position: center center; background-repeat: no-repeat; height: 396px; display: block !important;}
+.main_slider .slider_item {height: 406px;}
+.slider_item .container {height: 100%;}
+.slider_item .row {height: 100%;}
+.slider_item .col-6 {align-items: center; display: flex; text-align: left;}
+.slider_item h2 {font-size: 34px; line-height: 44px;}
+.slider_text {padding-right: 40px;}
+.font_color_white.slider_item h2, .font_color_white .slider_text {color: #fff;}
+.slider_item .btn {min-width: 150px;}
+.slider_btn {margin-top: 30px;}
+.slider_item img {max-height: 396px;}
+.menu_slider .slider_item img {height: 406px;}
+
+.menu_slider  .slide_info {
+	padding-left: 20px;
+}
+.menu_slider .container {width: auto;}
+
+.main_slider .slick-arrow:hover {background-color: #fff;  border-color: #fff;}
+
+.menu_slider .main_slider .slick-arrow {display: none !important;}
+.menu_slider .main_slider:hover .slick-arrow {display: block !important;}
+
+.element_color_white .slick-arrow {background-color: #fff; border: 2px solid #fff;}
+.main_slider.element_color_white .slick-arrow:hover {background-color: var(--main_color);  border-color: var(--main_color);}
+
+.element_color_white .slick-dots li button {	color: #fff;}
+.element_color_white .slick-dots li.slick-active {
+	border: 2px solid #fff;
+}
+.element_color_white .slick-dots li button:hover {color: #000;}
+
+
+@media only screen and (max-width : 1570px) {
+	.main_slider  .slick-prev {left: 20px;}
+	.main_slider  .slick-next {right: 20px;}
+}
+@media only screen and (max-width : 1430px) {
+	.slider_item .container {padding: 0 70px;}
+}
+@media only screen and (max-width : 1309px) {
+	.slider_item .container {padding: 0 15px;}
+}
+@media only screen and (max-width : 1140px) {
+	.slider_item .container {padding: 0 70px;}
+}
+@media only screen and (max-width : 1023px) {
+	.slider_item .container {padding: 0 15px;}
+	.slider_item .slide_info {width:100%;}
+	.slider_item .slide_img {display: none;}
+	.slider_item .container {    display: flex; height: 100%; text-align: center; padding: 0 60px;}
+	.slider_item .container div {width: 100%;}
+	.slider_item h2, .slider_item p, .slider_btn {text-align: center;}
+	.slider_text {padding-right: 0px;}
+}
+@media only screen and (max-width : 767px) {
+	.main_slider .slick-arrow {display: none !important; }
+	.slider_item .container {padding: 0 20px;}
+}

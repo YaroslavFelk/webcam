@@ -1,0 +1,22 @@
+.contact_triggers { padding: 35px 0;}
+.contact_triggers .row {flex-wrap: wrap;}
+.contact_triggers .col-3 {text-decoration: none !important; color: var(--font_color); padding-right: 20px;}
+.contact_triggers .col-3 svg {fill: var(--main_color);}
+.contact_trig_icon {width: 70px; height: 70px; border: 1px solid var(--main_color); background: #fff; border-radius: 50%; display: flex;
+	justify-content: center;
+	align-items: center; margin: 0 auto 10px;}
+.contact_trig_icon svg {fill: var(--dop_color);}
+.contact_trig_header {font-weight: bold; text-align: center; padding: 0 30px;}
+.contact_trig_text {text-align: center; padding: 0 30px;}
+.contact_trig_icon {float: left;}
+.contact_trig_header, .contact_trig_text {margin-left: 90px; padding: 0px; text-align: left;}
+
+@media only screen and (max-width : 1023px) {
+	.contact_triggers .col-3 {width: 50%; margin-bottom: 20px;}
+	.contact_triggers {padding-bottom: 15px;}
+}
+@media only screen and (max-width : 599px) {
+	.contact_triggers .col-3 {width: 100%;}
+	.contact_trig_icon {float: left;}
+	.contact_trig_header, .contact_trig_text {margin-left: 90px; padding: 0px; text-align: left;}
+}

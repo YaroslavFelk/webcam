@@ -1,0 +1,5 @@
+#changecityModal .quick-locations {display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;}
+#changecityModal .dropdown-block {padding: 5px 22px 10px 33px;}
+#changecityModal .dropdown-icon {top: 16px;}

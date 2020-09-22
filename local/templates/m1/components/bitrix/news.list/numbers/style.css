@@ -1,0 +1,20 @@
+.numbers {background: #F9F9F9; padding: 35px 0;}
+.numbers .row {flex-wrap: wrap;}
+.numbers .col-3 {text-decoration: none !important; color: var(--font_color);}
+.numbers .col-3:hover svg {fill: var(--main_color);}
+.numbers .col-3:hover .num_number {border-color:var(--main_color);}
+.num_number {/*width: 70px; height: 70px; border: 1px solid #fff; background: #fff; border-radius: 50%;*/ display: flex;
+	justify-content: center; font-size: 30px; font-weight: bold;
+	align-items: center; margin: 0 auto 10px;}
+
+.num_header {font-weight: normal; text-align: center; padding: 0 30px;}
+
+@media only screen and (max-width : 1023px) {
+	.numbers .col-3 {width: 50%; margin-bottom: 20px;}
+	.numbers {padding-bottom: 15px;}
+}
+@media only screen and (max-width : 599px) {
+	.numbers .col-3 {width: 100%;}
+	.num_number {float: left;}
+	.num_header, .trig_text {margin-left: 90px; padding: 0px; text-align: left;}
+}

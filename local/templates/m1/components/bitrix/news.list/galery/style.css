@@ -1,0 +1,13 @@
+.popup-gallery {flex-wrap: wrap;}
+.popup-gallery img {width: 100%;}
+@media only screen and (max-width : 1023px) {
+    .popup-gallery .col-3 {
+        width: 33.3333%
+    }
+}
+@media only screen and (max-width : 767px) {
+    .popup-gallery .col-3 {width: 50%}
+}
+@media only screen and (max-width : 500px) {
+    .popup-gallery .col-3 {width: 100%}
+}

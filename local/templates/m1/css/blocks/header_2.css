@@ -1,0 +1,17 @@
+.header_info .col-6, .header_info .col-2, .btn_social {align-items: center; height: 43px;}
+.header_info .btn_social a {width: 30px; height: 30px; margin: 0 5px 0 0;}
+.header_info .btn_social a {background: transparent;}
+.header_info .btn_social a svg {fill: #777777;}
+.header_mail {display: flex; align-items: center;}
+.header_mail svg {width: 20px;}
+.header_mail a i {margin-right: 7px;}
+.header_mail a {color: var(--main_color);}
+.header_login {justify-content: flex-end; display: flex;}
+.header_search {padding-right: 0px;}
+.header_adres {display: flex; align-items: center; margin: 0px;}
+.header_adres b {margin-right: 5px;}
+@media  only screen and (max-width: 1023px) {
+    .header_adres {display: none;}
+    .header_social {width: 50%;}
+    .header_mail {width: 30%;}
+}

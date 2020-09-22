@@ -1,0 +1,20 @@
+.triggers {background: #F9F9F9; padding: 35px 0;}
+.triggers .row {flex-wrap: wrap;}
+.triggers .col-3 {text-decoration: none !important; color: var(--font_color);}
+.triggers .col-3:hover svg {fill: var(--main_color);}
+.triggers .col-3:hover .trig_icon {border-color:var(--main_color);}
+.trig_icon {width: 70px; height: 70px; border: 1px solid #fff; background: #fff; border-radius: 50%; display: flex;
+	justify-content: center;
+	align-items: center; margin: 0 auto 10px;}
+.trig_icon svg {fill: var(--dop_color);}
+.trig_header {font-weight: bold; text-align: center; padding: 0 30px;}
+.trig_text {text-align: center; padding: 0 30px;}
+@media only screen and (max-width : 1023px) {
+	.triggers .col-3 {width: 50%; margin-bottom: 20px;}
+	.triggers {padding-bottom: 15px;}
+}
+@media only screen and (max-width : 599px) {
+	.triggers .col-3 {width: 100%;}
+	.trig_icon {float: left;}
+	.trig_header, .trig_text {margin-left: 90px; padding: 0px; text-align: left;}
+}

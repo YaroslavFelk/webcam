@@ -1,0 +1,5 @@
+<?php
+
+$MESS['PROFITKIT_CORE_MODULE_NAME'] = 'Профиткит M1 Core';
+$MESS['PROFITKIT_CORE_MODULE_DESCRIPTION'] = 'Модуль ядра';
+$MESS['PROFITKIT_CORE_MODULE_PARTNER_NAME'] = 'Профиткит';

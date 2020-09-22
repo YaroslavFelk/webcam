@@ -1,0 +1,204 @@
+header {
+    position: relative;
+    z-index: 6;
+}
+
+.slam-easyform {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.webform-field-upload-list {
+    margin-left: 0 !important;
+}
+
+
+.slam-easyform .hidden {
+    display: none!important;
+    visibility: hidden!important;
+}
+
+.slam-easyform .alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.slam-easyform .alert {
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.slam-easyform .alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.webform-field-upload {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+    max-width: 393px;
+}
+
+.webform-field-upload .webform-small-button {
+    border: 1.5px solid #ee93fd;
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1E1E1E;
+    background: none !important;
+    height: 100%;
+}
+
+.submit-button {
+    width: 100%;
+    max-width: 393px;
+    height: 42px;
+    margin: 15px 0;
+    border: 1.5px solid #E6E6E6;
+    border-radius: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.modal__textarea {
+    height: 80px;
+}
+
+.btn {
+    border: none;
+}
+
+.contact_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.vacancy h1{
+    color: #000;
+}
+
+.vacancy-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.vacancy__img {
+    margin-right: 20px;
+    width: 120%;
+}
+
+.vacancy__img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vacancy__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vacancy__text p{
+    margin: 50px 0;
+}
+
+.fld_row {
+    max-width: 393px;
+}
+
+
+.banner-arrow {
+    display: none !important;
+    visibility: hidden;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+.news_img img {
+    border-radius: 10px;
+}
+
+.news .row {
+    margin: 20px 0;
+}
+
+
+@media (max-width: 1500px) {
+    .contact_row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-item {
+        width: 50% !important;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding: 15px 0;
+    }
+    .vacancy__img {
+        width: 150%;
+    }
+}
+
+@media (max-width: 767px) {
+    .vacancy-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vacancy__img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 567px) {
+    .contact-item {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+
+
