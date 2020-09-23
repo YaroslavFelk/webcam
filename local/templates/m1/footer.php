@@ -77,25 +77,14 @@
                 </h2>
                 <ul class="footer__menu-list footer__menu-list--contacts">
                     <li class="footer__menu-item">
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            array(
-                                "AREA_FILE_SHOW" => "file",
-                                "PATH" => '/include/footer_phone.php',
-                            )
-                        ); ?>
+                        <a class="footer__menu-link footer__menu-link--phone link" href="tel:<?=$city['PROPERTIES']['PHONE_BEAUTY']['VALUE'] ?>">
+                            <?=$city['PROPERTIES']['PHONE']['VALUE'] ?>
+                        </a>
                     </li>
                     <li class="footer__menu-item">
-                        <? $APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            array(
-                                "AREA_FILE_SHOW" => "file",
-                                "PATH" => '/include/footer_mail.php',
-                            )
-                        ); ?>
-
+                        <a class="footer__menu-link footer__menu-link--email link" href="mailto:<?=$city['PROPERTIES']['EMAIL']['VALUE'] ?>">
+                            <?=$city['PROPERTIES']['EMAIL']['VALUE'] ?>
+                        </a>
                     </li>
                 </ul>
                 <ul class="footer__social">

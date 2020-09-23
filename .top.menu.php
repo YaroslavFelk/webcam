@@ -15,13 +15,14 @@ $aMenuLinks = array(
         array(),
         ""
     ),
-    array(
-        "Блог",
-        "/news/",
-        array(),
-        array(),
-        ""
-    ),
+//,
+//    array(
+//        "Блог",
+//        "/news/",
+//        array(),
+//        array(),
+//        ""
+//    ),
     array(
         "",
         "",

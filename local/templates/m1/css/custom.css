@@ -159,6 +159,36 @@ header {
     margin: 20px 0;
 }
 
+.blog__head {
+    color: #000;
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+body {
+    margin-top: 68px;
+}
+
+.header-fixed header {
+    background: #000 !important;
+}
+
+.contact-form {
+    z-index: 0;
+}
+
+.map-height {
+    height: 500px;
+}
 
 @media (max-width: 1500px) {
     .contact_row {
@@ -173,11 +203,19 @@ header {
 }
 
 @media (max-width: 1199px) {
+    .map-height {
+        height: 300px;
+    }
+
     .header {
         padding: 15px 0;
     }
     .vacancy__img {
         width: 150%;
+    }
+
+    body {
+        margin-top: 57px;
     }
 }
 

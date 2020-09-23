@@ -23,7 +23,7 @@ $isIndex = true
         "AJAX_OPTION_JUMP" => "N",
         "AJAX_OPTION_STYLE" => "Y",
         "AUTOPLAY" => "Y",
-        "AUTOPLAY_SPEED" => "N",
+        "AUTOPLAY_SPEED" => "3000",
         "CACHE_FILTER" => "N",
         "CACHE_GROUPS" => "N",
         "CACHE_TIME" => "36000000",
@@ -373,19 +373,39 @@ $isIndex = true
 
 
 
+<?$geo = explode(",", $city['PROPERTIES']['GEO']['VALUE']);
+?>
 <?$APPLICATION->IncludeComponent(
-    "bitrix:map.yandex.view",
-    "",
-    Array(
-        "API_KEY" => "",
-        "CONTROLS" => array("ZOOM"),
-        "INIT_MAP_TYPE" => "MAP",
-        "MAP_DATA" => "a:3:{s:10:\"yandex_lat\";s:7:\"55.7383\";s:10:\"yandex_lon\";s:7:\"37.5946\";s:12:\"yandex_scale\";i:10;}",
-        "MAP_HEIGHT" => "500",
-        "MAP_ID" => "",
-        "MAP_WIDTH" => "100%",
-        "OPTIONS" => array("ENABLE_DBLCLICK_ZOOM","ENABLE_DRAGGING")
-    )
+	"bitrix:map.yandex.view", 
+	".default", 
+	array(
+		"API_KEY" => "",
+		"CONTROLS" => array(
+			0 => "ZOOM",
+		),
+		"INIT_MAP_TYPE" => "MAP",
+		"MAP_DATA" => serialize(array(
+            'yandex_lat' => $geo[0],
+            'yandex_lon' => $geo[1],
+            'yandex_scale' => 13,
+            'PLACEMARKS' => array (
+                array(
+                    'TEXT' => $city['PROPERTIES']['ADDRESS']['VALUE'],
+                    'LON' => $geo[1],
+                    'LAT' => $geo[0],
+                ),
+            ),
+        )),
+		"MAP_HEIGHT" => "500",
+		"MAP_ID" => "",
+		"MAP_WIDTH" => "100%",
+		"OPTIONS" => array(
+			0 => "ENABLE_DBLCLICK_ZOOM",
+			1 => "ENABLE_DRAGGING",
+		),
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
 );?>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -30,8 +30,10 @@ $this->addExternalJS(SITE_TEMPLATE_PATH."/js/slick.min.js");
 
           <div class="container">
             <h1 class="banner__head"><?=$arItem['NAME'];?></h1>
-            <p class="banner__text"> <?=$arItem['PREVIEW_TEXT'];?></p>
-            <a class="calculator__btn btn banner__button js-popup" href="#">Отправить анкету</a>
+            <p class="banner__text"> <?=$arItem['PREVIEW_TEXT'];?>
+            </p>
+              <a class="js-popup calculator__btn btn banner__button " href="#">Отправить анкету</a>
+
           </div>
         </div>
 
@@ -51,14 +53,6 @@ $this->addExternalJS(SITE_TEMPLATE_PATH."/js/slick.min.js");
             arrows: false,
             nextArrow: '<button class="slick__arrows nextArrow "></button>',
             prevArrow: '<button class="slick__arrows prevArrow "></button>',
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        arrows: false
-                    }
-                },
-            ]
         });
     });
 </script>

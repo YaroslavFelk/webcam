@@ -2,6 +2,7 @@
 use \Bitrix\Main\Page\Asset;
 use \Bitrix\Main\Localization\Loc;
 use \Bitrix\Main\Config\Option;
+
 Loc::loadLanguageFile(__FILE__);
 
 \Bitrix\Main\Loader::includeModule('profitkit.m1');
@@ -10,6 +11,23 @@ $full_width = $APPLICATION->GetProperty("full");
 $left_menu = $APPLICATION->GetProperty("left_menu");
 $sidebar = $APPLICATION->GetProperty("sidebar");
 $no_h1 = $APPLICATION->GetProperty("no_h1");
+
+if (CModule::IncludeModule("iblock")):
+    if (isset($_COOKIE['city'])) {
+        $initialCityId = $_COOKIE['city'];
+    } else {
+        $initialCityId = 224;
+    }
+    $res = CIBlockElement::GetByID($initialCityId);
+    if($obEl = $res->GetNextElement())
+    {
+        $city = $obEl->GetFields();
+        $city['PROPERTIES'] = $obEl->GetProperties();
+    }
+endif;
+
+
+
 
 $moduleID = 'profitkit.m1';
 $main_color = Option::get($moduleID, 'BASE_COLOR_CUSTOM', "337FD2", SITE_ID);
@@ -38,9 +56,10 @@ if (!$site_width)
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/css/custom.css");
 
 //    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/vendor/js/jquery-3.4.1.min.js");
-    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/script.js");
+
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/vendor/js/slick.min.js");
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/vendor/js/jquery.malihu.PageScroll2id.min.js");
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/script.js");
     ?>
 <?$APPLICATION->ShowHead();?>
     <style>
@@ -101,7 +120,8 @@ if (!$site_width)
             "MENU_THEME" => "site",
             "ROOT_MENU_TYPE" => "top",    // Тип меню для первого уровня
             "USE_EXT" => "N",    // Подключать файлы с именами вида .тип_меню.menu_ext.php
-            "COMPONENT_TEMPLATE" => "webcam"
+            "COMPONENT_TEMPLATE" => "webcam",
+            "ACTIVE_CITY" => $city,
         ),
                                           false
         ); ?>
