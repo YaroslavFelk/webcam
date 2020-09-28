@@ -27,7 +27,6 @@ $WITH_FORM = strlen($arParams['WIDTH_FORM']) > 0 ? 'style="max-width:'.$arParams
         </svg>
       </span>
 
-
         <h3><?= $arParams['FORM_NAME'] ?></h3>
         <div class="alert alert-success <?if($arResult['STATUS'] != 'ok'):?>hidden<?endif;?>" role="alert">
             <?=$arParams['OK_TEXT']?>

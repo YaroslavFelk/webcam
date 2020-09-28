@@ -1,63 +1,114 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Alexandria Studio");?><?$APPLICATION->IncludeComponent("bitrix:news.list", "cities", Array(
-	"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
-		"ADD_SECTIONS_CHAIN" => "Y",	// Включать раздел в цепочку навигации
-		"AJAX_MODE" => "N",	// Включить режим AJAX
-		"AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
-		"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
-		"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
-		"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
-		"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-		"CACHE_GROUPS" => "Y",	// Учитывать права доступа
-		"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
-		"CACHE_TYPE" => "A",	// Тип кеширования
-		"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
-		"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
-		"DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
-		"DISPLAY_DATE" => "Y",	// Выводить дату элемента
-		"DISPLAY_NAME" => "Y",	// Выводить название элемента
-		"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
-		"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
-		"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
-		"FIELD_CODE" => array(	// Поля
-			0 => "",
-			1 => "",
-		),
-		"FILTER_NAME" => "",	// Фильтр
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
-		"IBLOCK_ID" => "30",	// Код информационного блока
-		"IBLOCK_TYPE" => "content_m1",	// Тип информационного блока (используется только для проверки)
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",	// Включать инфоблок в цепочку навигации
-		"INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
-		"MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
-		"NEWS_COUNT" => "20",	// Количество новостей на странице
-		"PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
-		"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
-		"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
-		"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
-		"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
-		"PAGER_TITLE" => "Новости",	// Название категорий
-		"PARENT_SECTION" => "",	// ID раздела
-		"PARENT_SECTION_CODE" => "",	// Код раздела
-		"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-		"PROPERTY_CODE" => array(	// Свойства
-			0 => "",
-			1 => "",
-		),
-		"SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
-		"SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
-		"SET_META_DESCRIPTION" => "Y",	// Устанавливать описание страницы
-		"SET_META_KEYWORDS" => "Y",	// Устанавливать ключевые слова страницы
-		"SET_STATUS_404" => "N",	// Устанавливать статус 404
-		"SET_TITLE" => "Y",	// Устанавливать заголовок страницы
-		"SHOW_404" => "N",	// Показ специальной страницы
-		"SORT_BY1" => "ACTIVE_FROM",	// Поле для первой сортировки новостей
-		"SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
-		"SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
-		"SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
-		"STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
-	),
-	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+$APPLICATION->SetTitle("Alexandria Studio");?>
+
+<?$APPLICATION->IncludeComponent(
+    "slam:easyform",
+    "popup",
+    array(
+        "ACTIVE_ELEMENT" => "N",
+        "CATEGORY_BUDGET_ADD_VAL" => "Другое (напишите свой вариант)",
+        "CATEGORY_BUDGET_IBLOCK_FIELD" => "FORM_BUDGET",
+        "CATEGORY_BUDGET_MULTISELECT" => "N",
+        "CATEGORY_BUDGET_TITLE" => "Уровень английского",
+        "CATEGORY_BUDGET_TYPE" => "select",
+        "CATEGORY_BUDGET_VALIDATION_ADDITIONALLY_MESSAGE" => "",
+        "CATEGORY_BUDGET_VALUE" => array(
+            0 => "Не знаю",
+            1 => "Базовый ",
+            2 => "Разговорный",
+            3 => "",
+        ),
+        "CATEGORY_DOCS_DROPZONE_INCLUDE" => "N",
+        "CATEGORY_DOCS_FILE_EXTENSION" => "doc, docx, xls, xlsx, txt, rtf, pdf, png, jpeg, jpg, gif",
+        "CATEGORY_DOCS_FILE_MAX_SIZE" => "20971520",
+        "CATEGORY_DOCS_IBLOCK_FIELD" => "FORM_DOCS",
+        "CATEGORY_DOCS_TITLE" => "Загрузить фото",
+        "CATEGORY_DOCS_TYPE" => "file",
+        "CATEGORY_EMAIL_IBLOCK_FIELD" => "FORM_EMAIL",
+        "CATEGORY_EMAIL_PLACEHOLDER" => "Почта",
+        "CATEGORY_EMAIL_TITLE" => "Почта",
+        "CATEGORY_EMAIL_TYPE" => "email",
+        "CATEGORY_EMAIL_VALIDATION_ADDITIONALLY_MESSAGE" => "data-bv-emailaddress-message=\"E-mail введен некорректно\"",
+        "CATEGORY_EMAIL_VALIDATION_MESSAGE" => "Обязательное поле",
+        "CATEGORY_EMAIL_VALUE" => "",
+        "CATEGORY_MESSAGE_PLACEHOLDER" => "",
+        "CATEGORY_MESSAGE_TITLE" => "Сообщение",
+        "CATEGORY_MESSAGE_TYPE" => "textarea",
+        "CATEGORY_MESSAGE_VALIDATION_ADDITIONALLY_MESSAGE" => "",
+        "CATEGORY_MESSAGE_VALUE" => "",
+        "CATEGORY_PHONE_IBLOCK_FIELD" => "FORM_PHONE",
+        "CATEGORY_PHONE_INPUTMASK" => "Y",
+        "CATEGORY_PHONE_INPUTMASK_TEMP" => "+7 (999) 999-9999",
+        "CATEGORY_PHONE_PLACEHOLDER" => "Телефон",
+        "CATEGORY_PHONE_TITLE" => "Телефон",
+        "CATEGORY_PHONE_TYPE" => "tel",
+        "CATEGORY_PHONE_VALIDATION_ADDITIONALLY_MESSAGE" => "",
+        "CATEGORY_PHONE_VALUE" => "",
+        "CATEGORY_TITLE_IBLOCK_FIELD" => "NAME",
+        "CATEGORY_TITLE_PLACEHOLDER" => "Как вас зовут?",
+        "CATEGORY_TITLE_TITLE" => "Как вас зовут?",
+        "CATEGORY_TITLE_TYPE" => "text",
+        "CATEGORY_TITLE_VALIDATION_ADDITIONALLY_MESSAGE" => "",
+        "CATEGORY_TITLE_VALUE" => "",
+        "CREATE_IBLOCK" => "",
+        "CREATE_SEND_MAIL" => "",
+        "DISPLAY_FIELDS" => array(
+            0 => "TITLE",
+            1 => "EMAIL",
+            2 => "PHONE",
+            3 => "BUDGET",
+            4 => "DOCS",
+            5 => "AGE",
+            6 => "",
+        ),
+        "EMAIL_BCC" => "",
+        "EMAIL_FILE" => "N",
+        "EMAIL_SEND_FROM" => "N",
+        "EMAIL_TO" => "",
+        "ENABLE_SEND_MAIL" => "Y",
+        "ERROR_TEXT" => "Произошла ошибка. Сообщение не отправлено.",
+        "EVENT_MESSAGE_ID" => array(
+            0 => "16",
+        ),
+        "FIELDS_ORDER" => "TITLE,AGE,EMAIL,PHONE,BUDGET,DOCS",
+        "FORM_AUTOCOMPLETE" => "Y",
+        "FORM_ID" => "FORM8",
+        "FORM_NAME" => "Отправь анкету",
+        "FORM_SUBMIT_VALUE" => "Отправить анкету",
+        "FORM_SUBMIT_VARNING" => "Нажимая на кнопку \"#BUTTON#\", вы даете согласие на обработку <a target=\"_blank\" href=\"#\">персональных данных</a>",
+        "HIDE_ASTERISK" => "Y",
+        "HIDE_FIELD_NAME" => "Y",
+        "HIDE_FORMVALIDATION_TEXT" => "N",
+        "IBLOCK_ID" => "27",
+        "IBLOCK_TYPE" => "formresult",
+        "INCLUDE_BOOTSRAP_JS" => "Y",
+        "MAIL_SUBJECT_ADMIN" => "#SITE_NAME#: Сообщение из формы обратной связи",
+        "OK_TEXT" => "Ваше сообщение отправлено. Мы свяжемся с вами в течение 2х часов",
+        "REQUIRED_FIELDS" => array(
+        ),
+        "SEND_AJAX" => "Y",
+        "SHOW_MODAL" => "N",
+        "TITLE_SHOW_MODAL" => "Спасибо!",
+        "USE_BOOTSRAP_CSS" => "N",
+        "USE_BOOTSRAP_JS" => "N",
+        "USE_CAPTCHA" => "N",
+        "USE_FORMVALIDATION_JS" => "Y",
+        "USE_IBLOCK_WRITE" => "Y",
+        "USE_INPUTMASK_JS" => "Y",
+        "USE_JQUERY" => "N",
+        "USE_MODULE_VARNING" => "Y",
+        "WIDTH_FORM" => "",
+        "_CALLBACKS" => "",
+        "COMPONENT_TEMPLATE" => "popup",
+        "NAME_MODAL_BUTTON" => "Обратная связь",
+        "CATEGORY_AGE_TITLE" => "Возраст",
+        "CATEGORY_AGE_TYPE" => "text",
+        "CATEGORY_AGE_PLACEHOLDER" => "Возраст",
+        "CATEGORY_AGE_VALUE" => "",
+        "CATEGORY_AGE_VALIDATION_ADDITIONALLY_MESSAGE" => "",
+        "CATEGORY_AGE_IBLOCK_FIELD" => "FORM_AGE"
+    ),
+    false
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -10,7 +10,7 @@ $WITH_FORM = strlen($arParams['WIDTH_FORM']) > 0 ? 'style="max-width:'.$arParams
 //pr($arParams);
 //pr($arResult);
 ?>
-<section class="modal">
+<section class="">
     <div class="slam-easyform<?=$arParams['HIDE_FORMVALIDATION_TEXT'] == 'Y' ? ' hide-formvalidation' : ''?>" <?=$WITH_FORM?>>
     <form id="<?=$FORM_ID?>"
           class="modal__form"
@@ -20,14 +20,13 @@ $WITH_FORM = strlen($arParams['WIDTH_FORM']) > 0 ? 'style="max-width:'.$arParams
           autocomplete="<?=$FORM_AUTOCOMPLETE?>"
           novalidate="novalidate"
     >
+
              <span class="modal__close-btn">
         <svg width="16" height="16" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.5 16.5" style="enable-background:new 0 0 16.5 16.5;" xml:space="preserve">
           <line class="st0" x1="14.2" y1="2.2" x2="2.2" y2="14.2" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
           <line class="st0" x1="2.2" y1="2.2" x2="14.2" y2="14.2" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
         </svg>
       </span>
-
-
         <h3><?= $arParams['FORM_NAME'] ?></h3>
         <div class="alert alert-success <?if($arResult['STATUS'] != 'ok'):?>hidden<?endif;?>" role="alert">
             <?=$arParams['OK_TEXT']?>

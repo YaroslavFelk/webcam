@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f3ab23-0424-4e02-b4f7-9f6f7e0dc2d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/lang/en/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/lang/ru/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/images/live_feed_sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/images/loading-place-img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/.default/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/images/live_feed_sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/images/loading-place-img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/bitrix/main.file.input/drag_n_drop/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bottom-pages.menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/.bottom-pages.menu.php" afterDir="false" />
+    <list default="true" id="c8f3ab23-0424-4e02-b4f7-9f6f7e0dc2d3" name="Default Changelist" comment="make cities pick">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.top.menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/.top.menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/menu/webcam/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/menu/webcam/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/index_slider/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/index_slider/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/index_slider/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/popup/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/popup/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/m1/css/addStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/css/addStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/m1/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +38,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../webcam" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -116,7 +73,9 @@
       <workItem from="1600778053243" duration="2480000" />
       <workItem from="1600781093951" duration="7799000" />
       <workItem from="1600848001842" duration="17603000" />
-      <workItem from="1600876873911" duration="3680000" />
+      <workItem from="1600876873911" duration="3734000" />
+      <workItem from="1600934294375" duration="2804000" />
+      <workItem from="1601297299128" duration="8190000" />
     </task>
     <task id="LOCAL-00001" summary="make first draft">
       <created>1600791212369</created>
@@ -125,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600791212369</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make cities pick">
+      <created>1600880641561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600880641561</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,21 +102,22 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="make first draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="make first draft" />
+    <MESSAGE value="make cities pick" />
+    <option name="LAST_COMMIT_MESSAGE" value="make cities pick" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Deployment" timestamp="1600696686245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1600696686245" />
-    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1600791179202">
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1601297445533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600791179202" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600878752058">
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601297445533" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600934694530">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600878752058" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600934694530" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600685789363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -167,10 +134,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1600771324419" />
-    <state x="479" y="129" width="577" height="566" key="find.popup" timestamp="1600880296620">
+    <state x="479" y="129" width="577" height="566" key="find.popup" timestamp="1601299722820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="129" width="577" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600880296620" />
+    <state x="479" y="129" width="577" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601299722820" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1600879121940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
