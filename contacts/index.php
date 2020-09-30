@@ -72,9 +72,9 @@ $APPLICATION->SetTitle("Контакты");
 		"OPTIONS" => array("ENABLE_SCROLL_ZOOM","ENABLE_DBLCLICK_ZOOM","ENABLE_DRAGGING")
 	)
 );?> &nbsp;<?$APPLICATION->IncludeComponent(
-	"slam:easyform",
-	"contact",
-	Array(
+	"slam:easyform", 
+	"contact", 
+	array(
 		"ACTIVE_ELEMENT" => "N",
 		"CATEGORY_EMAIL_IBLOCK_FIELD" => "FORM_EMAIL",
 		"CATEGORY_EMAIL_PLACEHOLDER" => "Почта",
@@ -105,14 +105,22 @@ $APPLICATION->SetTitle("Контакты");
 		"CATEGORY_TITLE_VALUE" => "",
 		"CREATE_IBLOCK" => "",
 		"CREATE_SEND_MAIL" => "",
-		"DISPLAY_FIELDS" => array("TITLE","EMAIL","PHONE","MESSAGE",""),
-		"EMAIL_BCC" => "",
+		"DISPLAY_FIELDS" => array(
+			0 => "TITLE",
+			1 => "EMAIL",
+			2 => "PHONE",
+			3 => "MESSAGE",
+			4 => "",
+		),
+		"EMAIL_BCC" => "felkfranklin@gmail.com, yaroslav@profitkit.ru",
 		"EMAIL_FILE" => "N",
 		"EMAIL_SEND_FROM" => "N",
-		"EMAIL_TO" => "",
+		"EMAIL_TO" => "yaroslav@profitkit.ru",
 		"ENABLE_SEND_MAIL" => "Y",
 		"ERROR_TEXT" => "Произошла ошибка. Сообщение не отправлено.",
-		"EVENT_MESSAGE_ID" => array("17"),
+		"EVENT_MESSAGE_ID" => array(
+			0 => "17",
+		),
 		"FIELDS_ORDER" => "TITLE,EMAIL,PHONE,MESSAGE",
 		"FORM_AUTOCOMPLETE" => "Y",
 		"FORM_ID" => "FORM9",
@@ -128,11 +136,13 @@ $APPLICATION->SetTitle("Контакты");
 		"MAIL_SUBJECT_ADMIN" => "#SITE_NAME#: Сообщение из формы обратной связи",
 		"NAME_MODAL_BUTTON" => "Обратная связь",
 		"OK_TEXT" => "Ваше сообщение отправлено. Мы свяжемся с вами в течение 2х часов",
-		"REQUIRED_FIELDS" => array("EMAIL"),
+		"REQUIRED_FIELDS" => array(
+			0 => "EMAIL",
+		),
 		"SEND_AJAX" => "Y",
 		"SHOW_MODAL" => "N",
 		"TITLE_SHOW_MODAL" => "Спасибо!",
-		"USE_BOOTSRAP_CSS" => "Y",
+		"USE_BOOTSRAP_CSS" => "N",
 		"USE_BOOTSRAP_JS" => "Y",
 		"USE_CAPTCHA" => "N",
 		"USE_FORMVALIDATION_JS" => "Y",
@@ -140,6 +150,8 @@ $APPLICATION->SetTitle("Контакты");
 		"USE_JQUERY" => "N",
 		"USE_MODULE_VARNING" => "Y",
 		"WIDTH_FORM" => "",
-		"_CALLBACKS" => ""
-	)
+		"_CALLBACKS" => "",
+		"COMPONENT_TEMPLATE" => "contact"
+	),
+	false
 );?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

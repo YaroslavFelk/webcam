@@ -384,18 +384,7 @@ $isIndex = true
 			0 => "ZOOM",
 		),
 		"INIT_MAP_TYPE" => "MAP",
-		"MAP_DATA" => serialize(array(
-            'yandex_lat' => $geo[0],
-            'yandex_lon' => $geo[1],
-            'yandex_scale' => 13,
-            'PLACEMARKS' => array (
-                array(
-                    'TEXT' => $city['PROPERTIES']['ADDRESS']['VALUE'],
-                    'LON' => $geo[1],
-                    'LAT' => $geo[0],
-                ),
-            ),
-        )),
+		"MAP_DATA" => serialize(array("yandex_lat"=>$geo[0],"yandex_lon"=>$geo[1],"yandex_scale"=>13,"PLACEMARKS"=>array(array("TEXT"=>$city["PROPERTIES"]["ADDRESS"]["VALUE"],"LON"=>$geo[1],"LAT"=>$geo[0],),),)),
 		"MAP_HEIGHT" => "500",
 		"MAP_ID" => "",
 		"MAP_WIDTH" => "100%",

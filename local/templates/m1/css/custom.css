@@ -109,16 +109,19 @@ header {
 .vacancy-item {
     display: flex;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 .vacancy__img {
     margin-right: 20px;
-    width: 120%;
+    min-width: 40%;
+    max-width: 40%;
+
 }
 
 .vacancy__img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     border-radius: 5px;
 }
@@ -211,7 +214,7 @@ body {
         padding: 15px 0;
     }
     .vacancy__img {
-        width: 150%;
+
     }
 
     body {
@@ -220,6 +223,11 @@ body {
 }
 
 @media (max-width: 767px) {
+    .vacancy__img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
     .vacancy-item {
         display: flex;
         flex-direction: column;

@@ -7,8 +7,8 @@ $FORM_ID           = trim($arParams['FORM_ID']);
 $FORM_AUTOCOMPLETE = $arParams['FORM_AUTOCOMPLETE'] ? 'on' : 'off';
 $FORM_ACTION_URI   = "";
 $WITH_FORM = strlen($arParams['WIDTH_FORM']) > 0 ? 'style="max-width:'.$arParams['WIDTH_FORM'].'"' : '';
-//pr($arParams);
-//pr($arResult);
+var_dump($arField);
+var_dump($arResult);
 ?>
 
     <div class=" slam-easyform<?=$arParams['HIDE_FORMVALIDATION_TEXT'] == 'Y' ? ' hide-formvalidation' : ''?>" <?=$WITH_FORM?>>
