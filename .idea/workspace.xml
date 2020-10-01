@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f3ab23-0424-4e02-b4f7-9f6f7e0dc2d3" name="Default Changelist" comment="make cities pick">
+      <change beforePath="$PROJECT_DIR$/.bottom-add.menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/.bottom-add.menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/php_interface/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/php_interface/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/cities/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/contacts/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/contacts/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/vacancy/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/bitrix/news.list/vacancy/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/contact/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/popup/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/components/slam/easyform/popup/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/m1/css/addStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/css/addStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/m1/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/m1/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacancy/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/vacancy/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +58,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -46,19 +74,22 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\yarikfelk\alexandria\local\templates\m1\vendor\js" />
-      <recent name="F:\yarikfelk\alexandria\include" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Френки\PhpstormProjects\webcam\local\templates\m1\include" />
       <recent name="F:\yarikfelk\alexandria\local\templates\m1\components\slam\easyform" />
       <recent name="F:\yarikfelk\alexandria\ vacancy" />
       <recent name="F:\yarikfelk\alexandria\local\templates\m1\components\slam\easyform\popup" />
       <recent name="F:\yarikfelk\alexandria" />
-      <recent name="F:\yarikfelk\alexandria\local\templates\m1\components\bitrix\menu\footer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\yarikfelk\alexandria\local\templates\m1\vendor\js" />
+      <recent name="F:\yarikfelk\alexandria\include" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c8f3ab23-0424-4e02-b4f7-9f6f7e0dc2d3" name="Default Changelist" comment="" />
@@ -76,6 +107,9 @@
       <workItem from="1600876873911" duration="3734000" />
       <workItem from="1600934294375" duration="2804000" />
       <workItem from="1601297299128" duration="8190000" />
+      <workItem from="1601376629948" duration="11842000" />
+      <workItem from="1601463022696" duration="57000" />
+      <workItem from="1601542423653" duration="4588000" />
     </task>
     <task id="LOCAL-00001" summary="make first draft">
       <created>1600791212369</created>
@@ -95,7 +129,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -106,18 +152,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="make cities pick" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Deployment" timestamp="1600696686245">
+    <state x="361" y="71" key="#Deployment" timestamp="1601542451456">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1600696686245" />
+    <state x="361" y="71" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1601542451456" />
     <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1601297445533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601297445533" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600934694530">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601547107325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600934694530" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601547107325" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600685789363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -134,10 +180,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="100" y="100" width="1336" height="624" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1600771324419" />
-    <state x="479" y="129" width="577" height="566" key="find.popup" timestamp="1601299722820">
+    <state x="479" y="129" width="577" height="566" key="find.popup" timestamp="1601546180864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="129" width="577" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601299722820" />
+    <state x="479" y="129" width="577" height="566" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601546180864" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1600879121940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

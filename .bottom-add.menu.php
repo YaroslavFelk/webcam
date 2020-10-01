@@ -3,21 +3,21 @@
 $aMenuLinks = array(
     array(
         "Вопрос-ответ",
-        "#faq",
+        "/#faq",
         array(),
         array(),
         ""
     ),
     array(
         "Преимущества",
-        "#advantages",
+        "/#advantages",
         array(),
         array(),
         ""
     ),
     array(
         "Интерьеры",
-        "#interiors",
+        "/#interiors",
         array(),
         array(),
         ""

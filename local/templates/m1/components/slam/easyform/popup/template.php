@@ -10,7 +10,7 @@ $WITH_FORM = strlen($arParams['WIDTH_FORM']) > 0 ? 'style="max-width:'.$arParams
 //pr($arParams);
 //pr($arResult);
 ?>
-<section class="">
+<section class="modal">
     <div class="slam-easyform<?=$arParams['HIDE_FORMVALIDATION_TEXT'] == 'Y' ? ' hide-formvalidation' : ''?>" <?=$WITH_FORM?>>
     <form id="<?=$FORM_ID?>"
           class="modal__form"

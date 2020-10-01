@@ -15,17 +15,41 @@ $this->setFrameMode(true);
 <div class="container">
 <div class="contact_triggers">
         <div class="contact_row">
-<?foreach($arResult["ITEMS"] as $arItem):?>
+<?for($i = 0; $i < count($arResult["ITEMS"]); $i++):?>
 	<?
-	$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-	$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+	$this->AddEditAction($arResult["ITEMS"][$i]['ID'], $arResult["ITEMS"][$i]['EDIT_LINK'], CIBlock::GetArrayByID($arResult["ITEMS"][$i]["IBLOCK_ID"], "ELEMENT_EDIT"));
+	$this->AddDeleteAction($arResult["ITEMS"][$i]['ID'], $arResult["ITEMS"][$i]['DELETE_LINK'], CIBlock::GetArrayByID($arResult["ITEMS"][$i]["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 	?>
-        <div class="col-3 contact-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-            <div class="contact_trig_icon"><?=$arItem['~DETAIL_TEXT'];?></div>
-            <div class="contact_trig_header"><?=$arItem['NAME'];?></div>
-            <div class="contact_trig_text"><?=$arItem['PREVIEW_TEXT'];?></div>
+        <?if ($i === 0) :?>
+        <div class="col-4 contact-item" id="<?=$this->GetEditAreaId($arResult["ITEMS"][$i]['ID']);?>">
+            <div class="contact_trig_icon"><?=$arResult["ITEMS"][$i]['~DETAIL_TEXT'];?></div>
+            <div class="contact_trig_header"><?=$arResult["ITEMS"][$i]['NAME'];?></div>
+            <div class="contact_trig_text">
+                <?=$arParams['ACTIVE_CITY']['PROPERTIES']['ADDRESS']['VALUE'] ?>
+            </div>
         </div>
-<?endforeach;?>
+            <?endif;?>
+
+        <?if ($i === 1) :?>
+        <div class="col-4 contact-item" id="<?=$this->GetEditAreaId($arResult["ITEMS"][$i]['ID']);?>">
+            <div class="contact_trig_icon"><?=$arResult["ITEMS"][$i]['~DETAIL_TEXT'];?></div>
+            <div class="contact_trig_header"><?=$arResult["ITEMS"][$i]['NAME'];?></div>
+            <div class="contact_trig_text">
+                <?=$arParams['ACTIVE_CITY']['PROPERTIES']['PHONE_BEAUTY']['VALUE'] ?>
+            </div>
+        </div>
+        <?endif;?>
+
+        <?if ($i === 2) :?>
+        <div class="col-4 contact-item" id="<?=$this->GetEditAreaId($arResult["ITEMS"][$i]['ID']);?>">
+            <div class="contact_trig_icon"><?=$arResult["ITEMS"][$i]['~DETAIL_TEXT'];?></div>
+            <div class="contact_trig_header"><?=$arResult["ITEMS"][$i]['NAME'];?></div>
+            <div class="contact_trig_text">
+                <?=$arParams['ACTIVE_CITY']['PROPERTIES']['EMAIL']['VALUE'] ?>
+            </div>
+        </div>
+        <?endif;?>
+<?endfor;?>
         </div>
 </div>
 </div>
