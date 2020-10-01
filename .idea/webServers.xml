@@ -3,10 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="64081b2f-e764-48c1-98b7-efc8b9f1eeb4" name="ftp" url="http://webcam.alm.su">
-        <fileTransfer host="shared-28.smartape.ru" port="21">
+        <fileTransfer host="shared-28.smartape.ru" port="22122" rootFolder="/var/www/user255686/data/www/webcam.alm.su" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
+          <option name="port" value="22122" />
         </fileTransfer>
       </webServer>
     </option>
